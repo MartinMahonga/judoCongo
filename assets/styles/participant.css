@@ -1,0 +1,67 @@
+:root {
+   --green: #5cb338 ;
+   --yellow: #ece852;
+   --orange: #ffc145;
+   --red: #fb4141;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background-color: #001c2f;
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   text-align: center;
+   font-family: sans-serif;
+}
+
+h1 {
+   color: var(--red);
+   font-size: 50px;
+   margin-bottom: 20px;
+   font-weight: 700;
+}
+
+ul {
+   list-style: none;
+}
+
+li {
+   font-size: 18px;
+   opacity: 0;
+   transform: translateX(-100%);
+   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+   margin-bottom: 15px;
+   cursor: pointer;
+}
+
+/* Animation alternée gauche-droite */
+li:nth-child(odd) {
+   transform: translateX(-100%);
+}
+
+li:nth-child(even) {
+   transform: translateX(100%);
+}
+
+li.visible {
+   opacity: 1;
+   transform: translateX(0);
+}
+
+/* Effet scale sur le premier li */
+li:hover {
+   transform: scale(2);
+}
+
+/* Ajout de blur aux autres li quand un est survolé */
+ul:hover li:not(:hover) {
+   filter: blur(2.5px);
+}

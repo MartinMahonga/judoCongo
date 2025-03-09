@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../styles/about.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   <title>A propos</title>
+</head>
+<body>
+   <header>
+      <div class="logo">
+         <img src="../images/logo-3.png" alt="Logo Fédération de Judo du Congo">
+      </div>
+      <nav id="nav-links">
+      <a href="../../index.html" title="Acceuil">Acceuil</a>
+
+      <a href="./event.html" title="evenement">
+         <abbr title="evenement">Event</abbr>
+      </a>
+
+      <a class="active" href="./about.html" title="À propos">À propos</a>
+      <a href="./signup.html" title="Inscription">Inscription</a>
+      </nav>
+      <div class="menu-icon" id="menu-icon">
+         <div class="bar"></div>
+         <div class="bar"></div>
+         <div class="bar"></div>
+      </div>
+      <div></div>
+   </header>
+
+   <main>
+      <section class="en-tete">
+         <!-- Navigation desktop -->
+         <nav class="desktop-nav">
+            <ul>
+               <li><a class="active" href="#history">Histoire</a></li>
+               <li><a href="#actu">Actualité</a></li>
+               <li><a href="#state">Statistiques</a></li>
+               <li><a href="#rank">Classement</a></li>
+               <li><a href="#champion">Champion</a></li>
+            </ul>
+         </nav>
+
+         <!-- Navigation mobile -->
+         <div class="mobile-nav">
+            <div class="custom-select-wrapper">
+               <select class="custom-select">
+                  <option value="#history">Histoire</option>
+                  <option value="#actu">Actualité</option>
+                  <option value="#state">Statistiques</option>
+                  <option value="#rank">Classement</option>
+                  <option value="#champion">Champion</option>
+               </select>
+               <i class="fas fa-chevron-down select-icon"></i> <!-- Icône Font Awesome -->
+            </div>
+         </div>
+
+         <!-- Script pour la redirection -->
+         <script>
+            document.querySelector('.custom-select').addEventListener('change', function (e) {
+               window.location.href = e.target.value; // Redirige vers l'URL sélectionnée
+            });
+         </script>
+      <section class="hero">
+         <h2>À propos du Judo en République du Congo</h2>
+         <p>Découvrez l'histoire, les actualités et les meilleurs judokas du pays.</p>
+      </section>
+
+      <section id="history" class="history">
+            <h2>L'histoire du Judo au Congo</h2>
+            <p>Le judo a été introduit en République du Congo dans les années 1960 par des enseignants japonais et des militaires congolais formés à l’étranger. Il s'est rapidement développé grâce à l’implication des clubs locaux et des fédérations sportives.</p>
+            <p>Depuis, le pays a produit plusieurs champions reconnus au niveau continental et mondial, participant aux Jeux Africains et aux compétitions internationales.</p>
+      </section>
+
+      <section class="news">
+            <h2 id="actu">Actualités du Judo Congolais</h2>
+            <div class="news-container">
+               <article class="news-item">
+                  <img src="../images/event-2.jpg" alt="Tournoi National">
+                  <h3>Tournoi National de Judo 2025</h3>
+                  <p>Les meilleurs clubs du pays se sont affrontés lors du grand tournoi de Brazzaville.</p>
+                  <a href="#">Lire la suite</a>
+               </article>
+               <article class="news-item">
+                  <img src="../images/event-2.jpg" alt="Champion d'Afrique">
+                  <h3>Un Congolais sacré Champion d'Afrique</h3>
+                  <p>Notre athlète national a remporté la médaille d'or au championnat africain de judo.</p>
+                  <a href="#">Lire la suite</a>
+               </article>
+               <article class="news-item">
+                  <img src="../images/event-2.jpg" alt="Tournoi National">
+                  <h3>Tournoi National de Judo 2025</h3>
+                  <p>Les meilleurs clubs du pays se sont affrontés lors du grand tournoi de Brazzaville.</p>
+                  <a href="#">Lire la suite</a>
+               </article>
+               <article class="news-item">
+                  <img src="../images/event-2.jpg" alt="Champion d'Afrique">
+                  <h3>Un Congolais sacré Champion d'Afrique</h3>
+                  <p>Notre athlète national a remporté la médaille d'or au championnat africain de judo.</p>
+                  <a href="#">Lire la suite</a>
+               </article>
+               <article class="news-item">
+                  <img src="../images/event-2.jpg" alt="Tournoi National">
+                  <h3>Tournoi National de Judo 2025</h3>
+                  <p>Les meilleurs clubs du pays se sont affrontés lors du grand tournoi de Brazzaville.</p>
+                  <a href="#">Lire la suite</a>
+               </article>
+               <article class="news-item">
+                  <img src="../images/event-2.jpg" alt="Champion d'Afrique">
+                  <h3>Un Congolais sacré Champion d'Afrique</h3>
+                  <p>Notre athlète national a remporté la médaille d'or au championnat africain de judo.</p>
+                  <a href="#">Lire la suite</a>
+               </article>
+               <article class="news-item">
+                  <img src="../images/event-2.jpg" alt="Tournoi National">
+                  <h3>Tournoi National de Judo 2025</h3>
+                  <p>Les meilleurs clubs du pays se sont affrontés lors du grand tournoi de Brazzaville.</p>
+                  <a href="#">Lire la suite</a>
+               </article>
+               <article class="news-item">
+                  <img src="../images/event-2.jpg" alt="Champion d'Afrique">
+                  <h3>Un Congolais sacré Champion d'Afrique</h3>
+                  <p>Notre athlète national a remporté la médaille d'or au championnat africain de judo.</p>
+                  <a href="#">Lire la suite</a>
+               </article>
+            </div>
+      </section>
+
+      <section class="ranking">
+         <h2 id="rank">Classement des meilleurs judokas</h2>
+         <table>
+               <thead>
+                  <tr>
+                     <th>Rang</th>
+                     <th>Nom</th>
+                     <th>Catégorie</th>
+                     <th>Médailles</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                        <td>1</td>
+                        <td>Jean Mbemba</td>
+                        <td>-81 kg</td>
+                        <td><img src="../images/medaille.png" alt="medaille" height="20px"></td>
+                  </tr>
+                  <tr>
+                        <td>2</td>
+                        <td>Alain Kimbouala</td>
+                        <td>-73 kg</td>
+                        <td><img src="../images/medaille.png" alt="medaille" height="20px"></td>
+                  </tr>
+                  <tr>
+                        <td>3</td>
+                        <td>Sarah Ngoma</td>
+                        <td>-63 kg</td>
+                        <td><img src="../images/medaille.png" alt="medaille" height="20px"></td>
+                  </tr>
+                  <tr>
+                     <td>4</td>
+                     <td>Jean Mbemba</td>
+                     <td>-81 kg</td>
+                     <td><img src="../images/medaille.png" alt="medaille" height="20px"></td>
+                  </tr>
+                  <tr>
+                        <td>5</td>
+                        <td>Alain Kimbouala</td>
+                        <td>-73 kg</td>
+                        <td><img src="../images/medaille.png" alt="medaille" height="20px"></td>
+                  </tr>
+                  <tr>
+                        <td>6</td>
+                        <td>Sarah Ngoma</td>
+                        <td>-63 kg</td>
+                        <td><img src="../images/medaille.png" alt="medaille" height="20px"></td>
+                  </tr>
+                  <tr>
+                     <td>7</td>
+                     <td>Jean Mbemba</td>
+                     <td>-81 kg</td>
+                     <td><img src="../images/medaille.png" alt="medaille" height="20px"></td>
+                  </tr>
+                  <tr>
+                        <td>8</td>
+                        <td>Alain Kimbouala</td>
+                        <td>-73 kg</td>
+                        <td><img src="../images/medaille.png" alt="medaille" height="20px"></td>
+                  </tr>
+                  <tr>
+                        <td>9</td>
+                        <td>Sarah Ngoma</td>
+                        <td>-63 kg</td>
+                        <td><img src="../images/medaille.png" alt="medaille" height="20px"></td>
+                  </tr>
+                  <tr>
+                     <td>10</td>
+                     <td>Sarah Ngoma</td>
+                     <td>-63 kg</td>
+                     <td><img src="../images/medaille.png" alt="medaille" height="20px"></td>
+                     </tr>
+               </tbody>
+            </table>
+      </section>
+      
+      <section id="champion" class="championships">
+            <h2>Championnats & Tournois</h2>
+            <table>
+               <thead>
+                  <tr>
+                        <th>Compétition</th>
+                        <th>Vainqueur</th>
+                        <th>Catégorie</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                        <td>Championnat National</td>
+                        <td>Jean Mbemba</td>
+                        <td>-81 kg</td>
+                  </tr>
+                  <tr>
+                        <td>Tournoi International de Brazzaville</td>
+                        <td>Sarah Ngoma</td>
+                        <td>-63 kg</td>
+                  </tr>
+                  <tr>
+                        <td>Jeux Africains</td>
+                        <td>Alain Kimbouala</td>
+                        <td>-73 kg</td>
+                  </tr>
+               </tbody>
+            </table>
+      </section>
+
+      <section id="state" class="stats">
+         <h2>Statistiques du Judo Congolais</h2>
+         <div class="stats-container">
+               <div class="stat-item">
+                  <h3>+85</h3>
+                  <p>Médailles remportées en compétitions</p>
+               </div>
+               <div class="stat-item">
+                  <h3>+120</h3>
+                  <p>Clubs de judo enregistrés</p>
+               </div>
+               <div class="stat-item">
+                  <h3>+5000</h3>
+                  <p>Judokas licenciés</p>
+               </div>
+               <div class="stat-item">
+                  <h3>+15</h3>
+                  <p>Participations aux compétitions internationales</p>
+               </div>
+            </div>
+      </section>
+   </main>
+
+   <footer>
+      <div class="container">
+         <div class="footer-section about">
+            <h2>Participants</h2>
+            <ul>
+               <li>SAMBA MAHONGA Martin Marrion</li>
+               <li>NTSOUMOU MPALA Lamienne Ackacya</li>
+               <li>PEYA EBOUKOU Mel Achange Rey</li>
+               <li></li>
+               <li></li>
+            </ul>
+            <div class="see">
+               <a href="./participant.html" target="_blank">Voir tout le monde</a>
+            </div>
+         </div>
+         
+         <div class="footer-section contact">
+            <h2>Contact</h2>
+            <p><strong>Adresse :</strong> Brazzaville, République du Congo</p>
+            <p><strong>Téléphone :</strong> +242 06 700 14 14</p>
+            <p><strong>Email :</strong> contact@judo-congo.cg</p>
+            <p><strong>Site web :</strong> www.judo-congo.cg</p>
+         </div>
+         
+         <div class="footer-section links">
+            <h2>Liens utiles</h2>
+            <ul>
+                  <li><a href="#">Accueil</a></li>
+                  <li><a href="#">Équipe</a></li>
+                  <li><a href="#">Compétitions</a></li>
+                  <li><a href="#">Contact</a></li>
+            </ul>
+         </div>
+         
+         <div class="footer-section contact-form">
+            <h2>Nous Contacter</h2>
+            <form>
+                  <input type="text" placeholder="Votre Nom" required>
+                  <input type="email" placeholder="Votre Email" required>
+                  <textarea placeholder="Votre Message" required></textarea>
+                  <button class="btn" type="submit">Envoyer</button>
+            </form>
+         </div>
+      </div>
+      <p class="footer-bottom">© 2025 Équipe Nationale de Judo - Tous droits réservés</p>
+</footer>
+
+   <script src="../scripts/script.js"></script>
+</body>
+</html>

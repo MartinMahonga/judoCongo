@@ -1,0 +1,338 @@
+:root {
+   --green: #5cb338 ;
+   --yellow: #ece852;
+   --orange: #ffc145;
+   --red: #fb4141;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+   font-family: sans-serif;
+}
+
+html, body {
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+} 
+
+header {
+   height: 140px;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background: #001c2f;
+   
+   nav {
+      height: 100%;
+      width: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      a {
+         color: #f1f1f1;
+         padding: 5px;
+         transition: border 0.4s;
+      }
+
+      a:hover {
+         border-bottom: 4px solid var(--red);
+      }
+
+      .active {
+         border-bottom: 4px solid var(--red);
+      }
+   }
+
+   .menu-icon {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+   }
+
+   .menu-icon .bar {
+      width: 50px;
+      height: 3px;
+      background-color: white;
+      margin: 4px 0;
+   }
+
+   /* Animation pour transformer le burger en croix */
+   .menu-icon.active .bar:nth-child(1) {
+      transform: translateY(5px) rotate(45deg);
+   }
+
+   .menu-icon.active .bar:nth-child(2) {
+      opacity: 0;
+   }
+
+   .menu-icon.active .bar:nth-child(3) {
+      transform: translateY(-17px) rotate(-45deg);
+   }
+
+   /* Responsive */
+   @media screen and (max-width: 768px) {
+      .logo {
+         img {
+            width: 300px;
+            position: relative;
+            left: -50px;
+         }
+      }
+   
+      nav {
+         position: absolute;
+         top: 140px; /* Ajustez en fonction de la hauteur du header */
+         right: 0;
+         height: 100vh;
+         width: 100%;
+         background-color: #001c2f;
+         flex-direction: column;
+         align-items: center;
+         align-content: center;
+         justify-content: center;
+         transition: transform 0.3s ease-in;
+         visibility: hidden; /* Ajout */
+         opacity: 0; /* Ajout */
+      }
+
+      .original-css-backdropFilter {
+         width: 70%;
+         height: 270px;
+         background-color:rgba(255, 255, 255, 0.4);
+         backdrop-filter: blur(30px) opacity(90%);
+      }
+
+      .menu-icon {
+         display: flex;
+      }
+
+      nav.active {
+         transform: translateX(0);
+         visibility: visible; /* Ajout */
+         opacity: 1; /* Ajout */
+      }
+   }
+}
+
+/* Hero Section */
+.hero {
+   text-align: center;
+   padding: 50px;
+   background: url('../images/10.jpg') no-repeat center center/cover;
+   color: var(--green);
+   height: 400px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+   p {
+      font-size: 25px;
+      font-weight: 500;
+   }
+}
+
+.hero h2 {
+   font-size: 50px;
+   color: var(--red);
+   text-transform: uppercase;
+}
+
+/* News Section */
+.news {
+   padding: 40px;
+   text-align: center;
+
+   h2 {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 25px;
+   }
+}
+
+.news-container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 20px;
+}
+
+.news-item {
+   background: #fff;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   padding: 20px;
+   width: 300px;
+   border-radius: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+
+   p {
+      font-size: 15px;
+      color: #001c2f;
+   }
+}
+
+.news-item img {
+   width: 100%;
+   border-radius: 10px;
+}
+
+.news-item h3 {
+   color: var(--red);
+}
+
+.news-item a {
+   color: #001c2f;
+   text-decoration: none;
+}
+
+.news-item a:hover {
+   color: var(--red);
+}
+
+/* Events Section */
+.events {
+   background-color: #fff;
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding-bottom: 100px;
+   padding-top: 50px;
+
+   h2 {
+      text-transform: uppercase;
+      color: #001c2f;
+      font-size: 25px;
+      font-weight: 700;
+      margin-top: 50px;
+      margin-bottom: 50px;
+   }
+}
+
+.events ul {
+   list-style: none;
+   padding: 0;
+}
+
+.events ul li {
+   margin: 10px 0;
+}
+
+/* footer */
+footer {
+   background: #001c2f;
+   color: #fff;
+   padding: 20px 0;
+   padding-top: 50px;
+}
+.container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   padding: 20px;
+}
+
+.footer-section {
+   flex: 1;
+   min-width: 250px;
+   margin: 10px;
+}
+
+.see {
+   margin-top: 20px !important;
+
+   a {
+      color: var(--red);
+      background-color: #fff;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding: 10px;
+      border-radius: 5px;
+   }
+
+   a:hover {
+      background-color: var(--red);
+      color: #fff;
+   }
+}
+
+.footer-section h2 {
+   font-size: 18px;
+   margin-bottom: 10px;
+}
+.footer-section p, .footer-section ul, .footer-section form {
+   font-size: 17px;
+}
+.footer-section ul {
+   list-style: none;
+   padding: 0;
+}
+.footer-section ul li {
+   margin-bottom: 5px;
+}
+.footer-section ul li a {
+   color: white;
+   text-decoration: none;
+}
+.footer-section form input, .footer-section form textarea {
+   width: 100%;
+   padding: 10px;
+   margin: 5px 0;
+   border: none;
+   border-radius: 5px;
+}
+
+.footer-section form button {
+   background: #fff;
+   color: var(--red);
+   border: none;
+   padding: 10px;
+   border-radius: 5px;
+   font-size: 16px;
+   cursor: pointer;
+}
+
+.btn:hover {
+   background-color: var(--red);
+   color: #fff;
+}
+
+.footer-bottom {
+   text-align: center;
+   font-size: 12px;
+   padding-top: 10px;
+   border-top: 1px solid #444;
+}
+
+/* responsive */
+/* Responsive Design */
+@media (max-width: 768px) {
+   .news-container {
+      flex-direction: column;
+      align-items: center;
+   }
+}
+
+@media (max-width: 1024px) {
+   footer {
+      margin-top: 50px;
+   }
+}
+
+@media (max-width: 768px) {
+   .container {
+      flex-direction: column;
+      align-items: center;
+   }
+}

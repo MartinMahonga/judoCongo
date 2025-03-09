@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../styles/signup.css">
+   <title>Inscription</title>
+</head>
+<body>
+   <header>
+      <div class="logo">
+         <img src="../images/logo-3.png" alt="Logo Fédération de Judo du Congo">
+      </div>
+      <nav id="nav-links">
+      <a href="../../index.html" title="Acceuil">Acceuil</a>
+
+      <a href="./event.html" title="evenement">
+         <abbr title="evenement">Event</abbr>
+      </a>
+
+      <a href="./about.html" title="À propos">À propos</a>
+      <a class="active" href="./signup.html" title="Inscription">Inscription</a>
+      </nav>
+      <div class="menu-icon" id="menu-icon">
+         <div class="bar"></div>
+         <div class="bar"></div>
+         <div class="bar"></div>
+      </div>
+      <div></div>
+   </header>
+
+   <main>
+      <div class="form-container">
+         <h2>Inscription</h2>
+         <form action="#" method="POST">
+            
+            <div class="input-group">
+               <label for="nom">Nom</label>
+               <input type="text" id="nom" name="nom" placeholder="nom" required>
+            </div>
+
+            <div class="input-group">
+               <label for="prenom">Prénom</label>
+               <input type="text" id="prenom" name="prenom" placeholder="prenom" required>
+            </div>
+
+            <div class="input-group">
+               <label for="email">Informations supplémentaires</label>
+               <input type="email" id="email" name="email"  placeholder="john@doe.com"></input>
+            </div>
+
+            <div class="input-group">
+               <label for="password">Mot de passe</label>
+               <input type="password" id="password" name="password">
+            </div>
+
+            <div class="input-group">
+               <label for="date_naissance">Date de naissance</label>
+               <input type="date" id="date_naissance" name="date_naissance" required>
+            </div>
+
+            <div class="input-group">
+               <label for="ville">Ville</label>
+               <select id="ville" name="ville" required>
+                  <option value="">Sélectionnez votre ville</option>
+                  <option value="brazzaville">Brazzaville</option>
+                  <option value="pointe-noire">Pointe-Noire</option>
+                  <option value="dolisie">Dolisie</option>
+                  <option value="owando">Owando</option>
+                  <option value="autre">Autre</option>
+               </select>
+            </div>
+
+            <div class="input-group">
+               <label for="adresse">Adresse</label>
+               <input type="text" id="adresse" name="adresse" placeholder="33rue, Louvizi" required>
+            </div>
+
+            <button type="submit">S'inscrire</button>
+         </form>
+      </div>
+   </main>
+
+   <footer>
+      <div class="container">
+         <div class="footer-section about">
+            <h2>Participants</h2>
+            <ul>
+               <li>SAMBA MAHONGA Martin Marrion</li>
+               <li>NTSOUMOU MPALA Lamienne Ackacya</li>
+               <li>PEYA EBOUKOU Mel Achange Rey</li>
+               <li></li>
+               <li></li>
+            </ul>
+            <div class="see">
+               <a href="./participant.html" target="_blank">Voir tout le monde</a>
+            </div>
+         </div>
+         
+         <div class="footer-section contact">
+            <h2>Contact</h2>
+            <p><strong>Adresse :</strong> Brazzaville, République du Congo</p>
+            <p><strong>Téléphone :</strong> +242 06 700 14 14</p>
+            <p><strong>Email :</strong> contact@judo-congo.cg</p>
+            <p><strong>Site web :</strong> www.judo-congo.cg</p>
+         </div>
+         
+         <div class="footer-section links">
+            <h2>Liens utiles</h2>
+            <ul>
+                  <li><a href="#">Accueil</a></li>
+                  <li><a href="#">Équipe</a></li>
+                  <li><a href="#">Compétitions</a></li>
+                  <li><a href="#">Contact</a></li>
+            </ul>
+         </div>
+         
+         <div class="footer-section contact-form">
+            <h2>Nous Contacter</h2>
+            <form>
+                  <input type="text" placeholder="Votre Nom" required>
+                  <input type="email" placeholder="Votre Email" required>
+                  <textarea placeholder="Votre Message" required></textarea>
+                  <button class="btn" type="submit">Envoyer</button>
+            </form>
+         </div>
+      </div>
+      <p class="footer-bottom">© 2025 Équipe Nationale de Judo - Tous droits réservés</p>
+</footer>
+
+   <script src="../scripts/script.js"></script>
+</body>
+</html>

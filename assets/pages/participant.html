@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../styles/participant.css">
+   <title>Participants</title>
+</head>
+<body>
+   <div class="container">
+      <h1>Liste des Participants</h1>
+      <ul id="participants-list">
+         <li class="one">SAMBA MAHONGA Martin Marrion</li>
+         <li>NTSOUMOU MPALA Lamienne Ackacya</li>
+         <li>PEYA EBOUKOU Mel Achange Rey</li>
+         <li>INSOULI Malick Loïck Otis</li>
+         <li>MVOUAMA Jaures Steven</li>
+         <li>NKOUKA Prince Alberto Girès</li>
+         <li>SAMBA Bonheur</li>
+         <li>MOKOKO Pea Chavi</li>
+         <li>NZONDO PEMBA Merite</li>
+      </ul>
+</div>
+
+<script>
+      document.addEventListener("DOMContentLoaded", function () {
+         const participants = document.querySelectorAll("#participants-list li");
+
+         participants.forEach((participant, index) => {
+            setTimeout(() => {
+                  participant.classList.add("visible");
+              }, index * 500); // Décalage de 500ms entre chaque apparition
+         });
+      });
+</script>
+</body>
+</html>
