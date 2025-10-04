@@ -1,1 +1,2 @@
-# judoCongo
+# A school project
+
